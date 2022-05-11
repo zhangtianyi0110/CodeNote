@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mustanche语法</title>
+</head>
+
+<body></body>
+<script src="https://cdn.bootcss.com/mustache.js/2.3.0/mustache.js"></script>
+<script type="text/javascript">
+  var data = {
+    "name": "zty",
+    "msg": {
+      "sex": "male",
+      "age": "26",
+      "hobit": "coding"
+    },
+    "code_language": ["Ch", "En", "Math", "physics"]
+  }
+  var template = '{{!注释不显示}},name is {{name}}'
+  var html = Mustache.render(template, data);
+  console.log(html);
+</script>
+
+</html>
